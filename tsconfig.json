@@ -1,3 +1,13 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "target": "esnext",
+  "baseUrl": "./src",
+  "compilerOptions": {
+    "allowJs": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node"
+  },
+  "paths": {
+    "*": ["src/*"]
+  }
 }
